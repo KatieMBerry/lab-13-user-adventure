@@ -1,5 +1,24 @@
-// import functions and grab DOM elements
+import { USER } from './storage/storage-utils.js';
 
-// initialize state
+const form = document.querySelector('form');
 
-// set event listeners to update state and DOM
+form.addEventListener('submit', (e) => {
+    e.preventDefault;
+
+    const data = new FormData(form);
+
+    //Set Up State Object
+    const user = {
+        name: data.get('name'),
+        class: data.get('class'),
+        gold: 0,
+        hp: 50,
+        completed: {}
+    };
+
+    //Set State Object in Local Storage
+    const stringyUser = JSON.stringify(user);
+    localStorage.setItem(USER, stringyUser);
+});
+
+
