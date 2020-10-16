@@ -1,6 +1,6 @@
-import { quests } from '../data/data.js';
-import { findById } from '../utils.js';
-import { saveUser, getUser } from '../storage/storage-utils.js';
+import { quests } from './data/data.js';
+import { findById } from './utils.js';
+import { saveUser, getUser } from './storage/storage-utils.js';
 
 const searchParams = new URLSearchParams(window.location.search);
 const section = document.querySelector('section');
