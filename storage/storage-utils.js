@@ -8,6 +8,6 @@ export function saveUser(user) {
 }
 
 export function getUser() {
-    const stringyUser = localStorage.getItem(user);
+    const stringyUser = localStorage.getItem(USER);
     return JSON.parse(stringyUser);
 }

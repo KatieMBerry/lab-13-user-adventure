@@ -1,5 +1,5 @@
-import quests from '../data/data.js';
-import { getUser } from '../storage/storage-utils.js';
+import { quests } from '../data/data.js';
+import { getUser, USER } from '../storage/storage-utils.js';
 
 // console.log(quests);
 
@@ -21,12 +21,13 @@ quests.forEach(quest => {
 });
 
 //map page should see if the user completed the adventure
-const user = getUser();
+const user = getUser(USER);
+// console.log(user);
 
 function userFinishedQuests(user) {
     for (let i = 0; i < quests.length; i++) {
-        const quest = quest[i];
-        if (!user.completed[quest.id]) {
+        const questCompleted = quests[i];
+        if (!user.completed[questCompleted.id]) {
             return false;
         }
     }
