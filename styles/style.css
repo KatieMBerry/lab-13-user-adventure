@@ -31,6 +31,13 @@ body {
 
 }
 
+h2 > img {
+    display: inline;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
 main {
     display: flex;
     flex-direction: column;

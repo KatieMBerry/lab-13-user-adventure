@@ -7,7 +7,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const data = new FormData(form);
-    console.log(data.get('name'), data.get('class'));
+    // console.log(data.get('name'), data.get('class'));
 
     //Set Up State Object & save to local storage (refactored)
     saveUser({
