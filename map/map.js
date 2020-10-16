@@ -1,4 +1,5 @@
 import quests from '../data/data.js';
+import { getUser } from '../storage/storage-utils.js';
 
 // console.log(quests);
 
@@ -18,5 +19,22 @@ quests.forEach(quest => {
 
     ul.append(li);
 });
+
+//map page should see if the user completed the adventure
+const user = getUser();
+
+function userFinishedQuests(user) {
+    for (let i = 0; i < quests.length; i++) {
+        const quest = quest[i];
+        if (!user.completed[quest.id]) {
+            return false;
+        }
+    }
+    return true;
+}
+//check conditions of user to see if need to be sent to the results page
+if (user.hp <= 0 || userFinishedQuests(user)) {
+    window.location.href = '../results/';
+}
 
 

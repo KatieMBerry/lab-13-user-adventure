@@ -17,7 +17,7 @@ form.addEventListener('submit', (e) => {
         completed: {}
     });
     //redirect to map page
-    window.location.href = './map/index.html';
+    window.location.href = '../map/';
 });
 
 
