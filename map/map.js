@@ -35,7 +35,7 @@ function userFinishedQuests(user) {
 }
 //check conditions of user to see if need to be sent to the results page
 if (user.hp <= 0 || userFinishedQuests(user)) {
-    window.location.href = '../results/';
+    window.location.href = './results/';
 }
 
 
