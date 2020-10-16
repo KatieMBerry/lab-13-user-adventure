@@ -1,5 +1,5 @@
-import { quests } from '../data/data.js';
-import { getUser, USER } from '../storage/storage-utils.js';
+import { quests } from './data/data.js';
+import { getUser, USER } from './storage/storage-utils.js';
 
 // console.log(quests);
 

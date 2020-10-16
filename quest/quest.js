@@ -17,7 +17,7 @@ h2.textContent = quest.title;
 section.appendChild(h2);
 
 const image = document.createElement('img');
-image.src = `../assets/${quest.image}`;
+image.src = `./assets/${quest.image}`;
 
 // console.log(quest.choices);
 const form = document.createElement('form');
