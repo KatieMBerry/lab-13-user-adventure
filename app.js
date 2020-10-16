@@ -1,4 +1,4 @@
-import { saveUser } from './storage/storage-utils.js';
+import { saveUser } from '../storage/storage-utils.js';
 
 const form = document.querySelector('form');
 
@@ -18,7 +18,7 @@ form.addEventListener('submit', (e) => {
         completed: {}
     });
     // //redirect to map page
-    window.location.href = './map/';
+    window.location.href = '../map/';
 });
 
 
