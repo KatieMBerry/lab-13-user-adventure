@@ -4,10 +4,10 @@ const form = document.querySelector('form');
 
 //loads on submit
 form.addEventListener('submit', (e) => {
-    e.preventDefault;
+    e.preventDefault();
 
     const data = new FormData(form);
-
+    // console.log(data.get('name'), data.get('class'));
     //Set Up State Object & save to local storage (refactored)
     saveUser({
         name: data.get('name'),
