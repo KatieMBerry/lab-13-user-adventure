@@ -1,4 +1,4 @@
-export default [
+export const quests = [
     {
         id: 'cubs',
         title: 'A Den of Cubs',
@@ -6,7 +6,7 @@ export default [
             top: '89%',
             left: '44%'
         },
-        image: 'bears.jpg',
+        image: 'bears.png',
         description: `
         You scurry towards a capacious bush to stow away in when you realize you are stumbling into a bear's den. You are perturbed to find yourself amidst 3 young cubs.  What do you do?
     `,

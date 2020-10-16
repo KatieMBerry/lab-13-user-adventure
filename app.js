@@ -7,7 +7,8 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const data = new FormData(form);
-    // console.log(data.get('name'), data.get('class'));
+    console.log(data.get('name'), data.get('class'));
+
     //Set Up State Object & save to local storage (refactored)
     saveUser({
         name: data.get('name'),
@@ -16,7 +17,7 @@ form.addEventListener('submit', (e) => {
         hp: 50,
         completed: {}
     });
-    //redirect to map page
+    // //redirect to map page
     window.location.href = '../map/';
 });
 
