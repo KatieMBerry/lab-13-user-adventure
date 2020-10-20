@@ -42,7 +42,7 @@ export const quests = [
             top: '17%',
             left: '37%'
         },
-        image: 'tourist.png',
+        image: 'tourist3.png',
         description: `
         You found some lovely day-old pizza and cabbage in the dumpster near the beach.  It's such a nice day out, might as well eat by the water. You're inhaling your rum-soaked pizza when you see an insipid tourist clad in socks and sandals who spots you from afar.  He's approaching fervently with camera in-hand. Will you:
     `,
@@ -80,7 +80,7 @@ export const quests = [
             left: '5%'
         },
         prerequisites: ['cubs', 'tourist'],
-        image: 'apples.png',
+        image: 'apples2.png',
         description: `
         You pick-up a sweet, sweet scent and after a long ramble through the woods you come across a fruiting apple tree.  There must be hundreds!  But only three have fallen to the ground, and you're too tired now to stockpile them for later.  Which one do you choose?
     `,

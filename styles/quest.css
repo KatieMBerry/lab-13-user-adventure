@@ -2,3 +2,15 @@ label {
     display: block;
 }
 
+section > span {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    margin: 10px auto;
+}
+
+button {
+    margin: auto 10px;
+}

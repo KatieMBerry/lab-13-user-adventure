@@ -16,6 +16,10 @@ const h2 = document.createElement('h2');
 h2.textContent = quest.title;
 section.appendChild(h2);
 
+const questDescription = document.createElement('span');
+questDescription.textContent = quest.description;
+section.appendChild(questDescription);
+
 const image = document.createElement('img');
 image.src = `../assets/${quest.image}`;
 
