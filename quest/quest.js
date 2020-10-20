@@ -19,10 +19,12 @@ section.appendChild(h2);
 const image = document.createElement('img');
 image.src = `../assets/${quest.image}`;
 
+
 // console.log(quest.choices);
 const form = document.createElement('form');
 section.appendChild(form);
 section.appendChild(image);
+
 //creates a form via a loop
 quest.choices.forEach(choice => {
     const label = document.createElement('label');
@@ -31,7 +33,6 @@ quest.choices.forEach(choice => {
     radios.value = choice.id;
     radios.name = 'choices';
     //for descriptions:
-
     const span = document.createElement('span');
 
     span.textContent = choice.description;
@@ -59,10 +60,20 @@ form.addEventListener('submit', (e) => {
     user.gold += choice.gold;
     user.hp += choice.hp;
 
+    const resultSpan = document.createElement('span');
+    resultSpan.textContent = choice.result;
+    section.appendChild(resultSpan);
     //when user completes quest set in local storage; map page should see if user completed adventure:
     user.completed[quest.id] = true;
     saveUser(user);
     // console.log(user);
+    const nextQuestButton = document.createElement('button');
+    nextQuestButton.textContent = 'Next Quest';
+    resultSpan.appendChild(nextQuestButton);
+
+    nextQuestButton.addEventListener('click', () => {
+        window.location.href = '../map/';
+    });
 
 });
 
